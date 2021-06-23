@@ -72,3 +72,7 @@ table {
     background: #fff;
     left: 145px
 }
+
+.start {
+    cursor: pointer;
+}

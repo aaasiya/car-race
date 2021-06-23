@@ -34,7 +34,7 @@ function startGame() {
     for (let i = 0; i < getQuantityElements(100 * setting.traffic); i++) {
         const enemy = document.createElement('div');
         enemy.classList.add('enemy');
-        enemy.y = -100 * setting.traffic * i + 1;
+        enemy.y = -100 * setting.traffic * (i + 1);
         enemy.style.top = enemy.y + 'px';
         enemy.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + 'px';
         enemy.style.background = 'transparent url("./image/enemy2.png") center / cover no-repeat';
